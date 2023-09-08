@@ -1,40 +1,32 @@
 // mobile menu
-const navMobile = document.querySelector(".nav-mobile");
-const menu = document.querySelector(".fa-bars");
-const cancel = document.querySelector(".fa-xmark");
+const navMobile = document.querySelector('.nav-mobile');
+const menu = document.querySelector('.fa-bars');
+const cancel = document.querySelector('.fa-xmark');
 
-menu.addEventListener("click", () => {
-  navMobile.style.display = "block";
+menu.addEventListener('click', () => {
+  navMobile.style.display = 'block';
 });
 
-cancel.addEventListener("click", () => {
-  navMobile.style.display = "none";
+cancel.addEventListener('click', () => {
+  navMobile.style.display = 'none';
 });
 
-//more button
-document.addEventListener('DOMContentLoaded', function() {
-    const moreBtn = document.querySelector(".btn2");
-    const speakers = document.querySelectorAll(".more");
-    
-    moreBtn.addEventListener("click", () => {
-        speakers.forEach(speaker =>{
-            speaker.style.display = "flex";
-        })
-      moreBtn.style.display = "none";
-      console.log("button clicked")
+// more button
+document.addEventListener('DOMContentLoaded', () => {
+  const moreBtn = document.querySelector('.btn2');
+  const speakers = document.querySelectorAll('.more');
+
+  moreBtn.addEventListener('click', () => {
+    speakers.forEach((speaker) => {
+      speaker.style.display = 'flex';
     });
-    
-
+    moreBtn.style.display = 'none';
   });
-  
-
-
+});
 
 // dynamic page
 
-
-
-const speaker = document.querySelector(".speakers-parent");
+const speaker = document.querySelector('.speakers-parent');
 
 function speak() {
   speaker.innerHTML = `<div class="speakers">
