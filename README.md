@@ -98,6 +98,8 @@ For more information on the importance of a professional README for your reposit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+https://wisdomibu.github.io/html-css-js-capstone-project/
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
