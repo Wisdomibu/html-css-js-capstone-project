@@ -116,6 +116,7 @@ h1 {
   color: white;
   margin-top: 50px;
   height: 200px;
+  width: 300px;
 }
 
 .event-parent {
@@ -137,6 +138,8 @@ footer {
   justify-content: space-between;
   padding: 20px 30px;
   align-items: center;
+  background-color: black;
+  color: white;
 }
 
 .footer-div {
@@ -186,6 +189,15 @@ footer {
     gap: 20px;
   }
 
+  .logo-div2 > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    text-decoration: none;
+    color: black;
+  }
+
   .ul1 > li a {
     text-decoration: none;
     color: white;
@@ -198,21 +210,15 @@ footer {
 
   .nav2 {
     display: flex;
-    padding: 20px;
+    padding: 20px 100px;
     justify-content: space-between;
-  }
-
-  .logo-div2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 25%;
   }
 
   .ul2 {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 80px;
+    align-items: center;
   }
 
   .fa > .fa-bars {
@@ -229,7 +235,7 @@ footer {
   .event-parent-parent {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 80px;
   }
 
   .event-parent {
@@ -237,6 +243,7 @@ footer {
     height: 200px;
     background-size: cover;
     margin-bottom: 50px;
+    margin-left: 20px;
   }
 
   .sec1 {

@@ -67,7 +67,11 @@ header {
   font-size: 55px;
 }
 
-.sec1 > div {
+.sec1 > h5 {
+  margin-top: 10px;
+}
+
+.sec1 p {
   background-color: #d3d3d3;
   color: black;
   padding: 20px;
@@ -75,10 +79,6 @@ header {
   font-size: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
-}
-
-.sec1 > h5 {
-  margin-top: 10px;
 }
 
 .sec2 {
@@ -145,19 +145,28 @@ header {
   margin-top: 50px;
 }
 
-.speakers {
+.speaker {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  width: 35%;
+}
+
+.speakers-child > h3 {
+  margin-top: 15px;
 }
 
 .speaker-pic {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: relative;
   z-index: 100;
   top: 20px;
   left: 20px;
+}
+
+.speakers-parent .speaker:nth-child(n+2) {
+  display: none;
 }
 
 .tile {
@@ -166,7 +175,7 @@ header {
   position: absolute;
 }
 
-.speakers-child > h4 {
+.speaker-description {
   color: #ec5242;
   margin: 20px 0;
 }
@@ -190,7 +199,9 @@ header {
 }
 
 .sec3 {
-  padding: 30px;
+  padding: 30px 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec4 {
@@ -269,7 +280,7 @@ footer {
 
   .nav2 {
     display: flex;
-    padding: 20px;
+    padding: 20px 100px;
     justify-content: space-between;
   }
 
@@ -283,11 +294,32 @@ footer {
   .ul2 {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 80px;
+    align-items: center;
   }
 
   .fa > .fa-bars {
     display: none;
+  }
+
+  .sec1 {
+    background-image: url("resources/images/bg.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 100px;
+  }
+
+  .sec1 p {
+    background-color: #d3d3d3;
+    color: black;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 90px;
   }
 
   .btn3 {
@@ -315,16 +347,26 @@ footer {
   }
 
   .speakers-parent {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     gap: 10px;
+    padding: 0 100px;
   }
 
-  .speakers {
+  .speaker {
     display: flex;
     gap: 30px;
     margin-top: 50px;
     width: 45%;
+  }
+
+  .speakers-parent .speaker:nth-child(n+2) {
+    display: flex;
+  }
+
+  .speaker-information {
+    width: 350px;
+    height: 200px;
   }
 
   .sec1 > div {
