@@ -259,7 +259,7 @@ footer {
     gap: 20px;
   }
 
-  .nav-mobile {
+  .nav-mobile-parent {
     display: none;
   }
 
